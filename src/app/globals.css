@@ -1,39 +1,88 @@
 @import "tailwindcss";
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/*
+LABUBU MARKETPLACE DESIGN SYSTEM
+Extracted from AI-generated design reference
+
+VISUAL IDENTITY:
+- Clean, modern interface with playful collectible aesthetic
+- Soft pastel colors: mint green, soft pink, light blue, warm yellow
+- Predominantly white background with subtle gray tones
+- Card-based components with rounded corners and soft shadows
+- Emphasis on product imagery with consistent styling
+
+COLOR PALETTE:
+- Primary (Blue): #0066FF - CTA buttons, links, emphasis
+- Mint Green: #A0E7E5 - Featured items, accents
+- Soft Pink: #FFB3D9 - Category highlights, secondary accents
+- Warm Yellow: #FFD700 - Premium/limited edition markers
+- Dark Gray/Black: #2D3436 - Text, footer
+- Light Gray: #F5F6FA - Backgrounds, subtle sections
+- White: #FFFFFF - Main background, cards
+
+TYPOGRAPHY:
+- Headers: Bold, clean sans-serif (approximate 24-32px)
+- Body: Medium weight sans-serif (14-16px)
+- Labels: Small caps or uppercase for categories (12px)
+- Pricing: Bold emphasis on prices
+
+SPACING SYSTEM:
+- Cards: 16-24px padding, 12px border radius
+- Grid gaps: 16-20px between items
+- Section spacing: 48-64px vertical margins
+- Container max-width: ~1200px
+
+COMPONENT PATTERNS:
+- Product Cards: Rounded 12px, subtle shadow, hover lift effect
+- Buttons: Rounded 6px, bold text, solid fills for CTAs
+- Images: Consistent aspect ratios, soft border radius 8-12px
+- Badges: Small rounded pills for verification/status
+- Navigation: Clean sticky header with search prominence
+
+IMAGE TREATMENT STRATEGY:
+- Product images: Square aspect ratio (1:1), rounded corners, centered
+- Background: Solid color or subtle gradient fills behind product
+- Consistency: All product images get same border-radius and shadow treatment
+- Icons: Simple, playful style matching Labubu aesthetic
 */
 
 :root {
   --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  --foreground: 214 15% 22%;
 
   --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card-foreground: 214 15% 22%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
+  --popover-foreground: 214 15% 22%;
 
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
+  --primary: 217 100% 50%;
+  --primary-foreground: 0 0% 100%;
 
   --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  --secondary-foreground: 214 15% 22%;
 
-  --muted: 210 40% 96.1%;
+  --muted: 220 14% 96%;
   --muted-foreground: 215.4 16.3% 46.9%;
 
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --accent: 168 76% 76%;
+  --accent-foreground: 214 15% 22%;
 
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 217 100% 50%;
 
-  --radius: 0.5rem;
+  --radius: 0.75rem;
+
+  /* Labubu Marketplace Custom Colors */
+  --labubu-mint: 177 59% 76%;
+  --labubu-pink: 330 100% 85%;
+  --labubu-yellow: 48 100% 67%;
+  --labubu-blue-light: 201 92% 84%;
+  --labubu-dark: 210 11% 15%;
 
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 240 5.3% 26.1%;

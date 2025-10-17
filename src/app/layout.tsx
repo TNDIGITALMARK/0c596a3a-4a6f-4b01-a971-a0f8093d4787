@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Labubu Market - Buy & Sell Authentic Labubu Collectibles",
+  description: "The premier marketplace for Labubu collectors. Discover rare editions, connect with trusted sellers, and build your collection with confidence.",
 };
 
 export default function RootLayout({
