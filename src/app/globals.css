@@ -47,51 +47,52 @@ IMAGE TREATMENT STRATEGY:
 */
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 214 15% 22%;
+  --background: 210 40% 98%;
+  --foreground: 220 13% 13%;
 
   --card: 0 0% 100%;
-  --card-foreground: 214 15% 22%;
+  --card-foreground: 220 13% 13%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 214 15% 22%;
+  --popover-foreground: 220 13% 13%;
 
-  --primary: 217 100% 50%;
+  --primary: 262 83% 58%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 214 15% 22%;
+  --secondary: 177 70% 85%;
+  --secondary-foreground: 220 13% 13%;
 
-  --muted: 220 14% 96%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 220 9% 46%;
 
-  --accent: 168 76% 76%;
-  --accent-foreground: 214 15% 22%;
+  --accent: 330 81% 90%;
+  --accent-foreground: 220 13% 13%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-  --ring: 217 100% 50%;
+  --border: 220 13% 90%;
+  --input: 220 13% 90%;
+  --ring: 262 83% 58%;
 
-  --radius: 0.75rem;
+  --radius: 1rem;
 
-  /* Labubu Marketplace Custom Colors */
-  --labubu-mint: 177 59% 76%;
-  --labubu-pink: 330 100% 85%;
-  --labubu-yellow: 48 100% 67%;
-  --labubu-blue-light: 201 92% 84%;
-  --labubu-dark: 210 11% 15%;
+  /* Labubu Marketplace Custom Colors - Light Theme */
+  --labubu-mint: 177 70% 85%;
+  --labubu-pink: 330 81% 90%;
+  --labubu-yellow: 45 100% 75%;
+  --labubu-blue-light: 201 100% 92%;
+  --labubu-purple: 262 83% 58%;
+  --labubu-dark: 220 13% 13%;
 
-  --sidebar-background: 0 0% 98%;
-  --sidebar-foreground: 240 5.3% 26.1%;
-  --sidebar-primary: 240 5.9% 10%;
-  --sidebar-primary-foreground: 0 0% 98%;
-  --sidebar-accent: 240 4.8% 95.9%;
-  --sidebar-accent-foreground: 240 5.9% 10%;
-  --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 220 13% 13%;
+  --sidebar-primary: 262 83% 58%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 40% 96%;
+  --sidebar-accent-foreground: 220 13% 13%;
+  --sidebar-border: 220 13% 90%;
+  --sidebar-ring: 262 83% 58%;
 }
 
 .dark {
@@ -209,4 +210,34 @@ IMAGE TREATMENT STRATEGY:
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(210 40% 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(262 83% 58%), hsl(330 81% 70%));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(262 83% 50%), hsl(330 81% 60%));
+}
+
+/* Smooth animations */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: hsl(262 83% 58% / 0.3);
+  color: hsl(220 13% 13%);
 }
